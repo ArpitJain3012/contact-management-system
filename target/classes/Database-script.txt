@@ -1,0 +1,9 @@
+CREATE TABLE CONTACT
+(cid number(4) CONSTRAINT contacts_cid_pk PRIMARY KEY,
+cname varchar2(20) CONSTRAINT contacts_cname_nn NOT NULL,
+dob date CONSTRAINT contacts_dob_nn NOT NULL,
+mobile char(10) CONSTRAINT contacts_mobile_un UNIQUE);
+
+INSERT INTO contact VALUES(1,'Arpit','30-dec-1998','9313666807');
+INSERT INTO contact VALUES(2,'Akshay','3-jan-1999','7845126584');
+INSERT INTO contact VALUES(3,'Aman','30-june-1999','882574400');
